@@ -109,7 +109,7 @@ endmodule
 /////////////////////////////////////////////
 module sbox_sync(
 	input		logic [7:0] a,
-	input	 	logic 			clk,
+	input	 	logic 	clk,
 	output 	logic [7:0] y);
             
   // sbox implemented as a ROM
