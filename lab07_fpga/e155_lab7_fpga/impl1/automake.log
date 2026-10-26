@@ -1,0 +1,6 @@
+erilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+Analyzing Verilog file ../../src/aes_starter.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/subbytes.sv. VERI-1482
+ERROR <35901116> - ../source/impl1/subbytes.sv(17): sbox15 is already declared. VERI-1116
+
+child process exited abnormally

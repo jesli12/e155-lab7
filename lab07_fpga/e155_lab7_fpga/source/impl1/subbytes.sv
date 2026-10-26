@@ -9,6 +9,7 @@ module subbytes(input  logic         clk, reset, en,
                 input  logic [127:0] state, 
                 output logic [127:0] Sstate);
 	// replaces each byte (8-bit) in the state block (128 bits) with its Sbox() transformation
+	// I coulda used input_to_State to make my life easier here but whatever
 	
 	// 0
 	sbox_sync sbox16(.a(state[127:120]), .clk(clk), .y(Sstate[127:120]));
