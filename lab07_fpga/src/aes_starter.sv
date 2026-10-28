@@ -79,7 +79,27 @@ module aes_core(input  logic         clk,
                 output logic         done, 
                 output logic [127:0] cyphertext);
 
-    // TODO: Your code goes here
+    // CIPHER aes128 is implemented here, with a controller fsm and a datapath
+	typedef enum logic [1:0] {FIRST, ROUNDS, LAST} statetype;
+	stateype state, nextstate;
+	
+	logic [3:0] round;
+	
+	
+	always_ff @(posedge clk) begin
+		if 
+		state <= nextstate;
+	end
+	
+	// next state logic!
+	always_comb
+		case (state)
+			FIRST: nextstate = (round > 4'd0)? ROUNDS : FIRST;
+			ROUNDS: nextstate = (round > 4'd10)? LAST : ROUNDS;
+			LAST: nextstate = FIRST;
+		endcase
+		
+	
     
 endmodule
 
