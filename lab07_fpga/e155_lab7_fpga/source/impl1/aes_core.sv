@@ -76,7 +76,7 @@ module aes_core(input  logic         clk,
 		end
 		else begin
 			round <= round + 4'd1;
-			textOut <= textIn;
+			textIn <= textOut;
 			prevKey <= newKey;
 			state <= nextstate;
 		end
