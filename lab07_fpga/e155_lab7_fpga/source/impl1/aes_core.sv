@@ -28,18 +28,56 @@ module aes_core(input  logic         clk,
 	typedef enum logic [1:0] {FIRST, DELAY, ROUNDS, LAST} statetype;
 	statetype state, nextstate;
 	
-	logic [3:0] round;
+	logic [3:0] round; // counts which round we're on
+	// logic [3:0] selector; // output of FSM controller, selects mux outputs, [FIRST, DELAY, ROUND, LAST]
+
+	logic [127:0] textIn, subbytesOut, shiftrowsOut, mixcolumnsOut, opmuxOut, addroundkeyOut, textOut;
+	logic [127:0] prevKey, newKey;
 	
-	// Datapath
-	 
+// Datapath ////////////////////////////////////////////////////////////////////////////////////
+	subbytes subbyte_op(.clk(clk), .state(textIn), .Sstate(subbytesOut));
+	shiftrows shiftrows_op(.a(subbytesOut), .y(shiftrowsOut));
+	mixcolumns mixcolumns_op(.a(shiftrowsOut),.y(mixcolumnsOut));
+	// Mux 1 (Op Mux): operation mux to be inputted into addroundkey
+	// controls opmuxOut
+	always_comb
+		case (state)
+			FIRST: opmuxOut = plaintext;
+			// DELAY: op selector is dont care
+			ROUNDS: opmuxOut = mixcolumnsOut;
+			LAST: opmuxOut = shiftrowsOut;
+			default: opmuxOut = mixcolumnsOut;
+		endcase
+	// End Mux 1
+	keyexpansion keyexpansion_op(.clk(clk), .round(round), .rkey(prevKey), .keyOut(newKey));
+	addroundkey addroundkey_op(.a(opmuxOut), .roundkey(newKey), .y(addroundkeyOut));
+	// Mux 2: delay/not delay mux to be inputted into register next
+	// controls textOut
+	always_comb
+		case (state)
+			DELAY: textOut = textIn;
+			// all other states is not delay
+			default: textOut = addroundkeyOut;
+		endcase
+	// End Mux 2, textOut is set
 	
-	// FSM register
+// FSM CONTROLLER //////////////////////////////////////////////////////////////////////////////
+	// FSM register + datapath register in one oop
 	always_ff @(posedge clk) begin
 		if (load) begin // load is high when MCU is still sending info to FPGA, keep in state 0
 			round <= 4'd0;
+			textIn <= plaintext;
+			prevKey <= key;
 			state <= FIRST;
 		end 
+		else if (state == DELAY) begin
+			textOut <= textIn;
+			state <= nextstate;
+		end
 		else begin
+			round <= round + 4'd1;
+			textOut <= textIn;
+			prevKey <= newKey;
 			state <= nextstate;
 		end
 	end
@@ -55,5 +93,6 @@ module aes_core(input  logic         clk,
 		endcase
 		
 	assign done = (state == LAST);
+	assign cyphertext = textOut;
     
 endmodule

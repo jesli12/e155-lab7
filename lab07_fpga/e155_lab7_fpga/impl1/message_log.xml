@@ -1,17 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliMessageLog>
-    <Task name="Synthesis">
-        <Message>
-            <ID>35001797</ID>
-            <Severity>1</Severity>
-        </Message>
-        <Message>
-            <ID>35901116</ID>
-            <Severity>4096</Severity>
-            <Dynamic>../source/impl1/subbytes.sv(17): </Dynamic>
-            <Dynamic>sbox15</Dynamic>
-            <Navigation>../source/impl1/subbytes.sv</Navigation>
-            <Navigation>17</Navigation>
-        </Message>
-    </Task>
-</BaliMessageLog>
+<BaliMessageLog/>

@@ -12,6 +12,9 @@ if {![file exists {C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab
 cd {C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/impl1}
 # synthesize IPs
 # synthesize VMs
+# propgate constraints
+file delete -force -- e155_lab7_fpga_impl1_cpe.ldc
+::radiant::runengine::run_engine_newmsg cpe -syn lse -f "e155_lab7_fpga_impl1.cprj" -a "iCE40UP"  -o e155_lab7_fpga_impl1_cpe.ldc
 # synthesize top design
 file delete -force -- e155_lab7_fpga_impl1.vm e155_lab7_fpga_impl1.ldc
 ::radiant::runengine::run_engine_newmsg synthesis -f "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/impl1/e155_lab7_fpga_impl1_lattice.synproj" -logfile "e155_lab7_fpga_impl1_lattice.srp"

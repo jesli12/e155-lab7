@@ -1,8 +1,8 @@
 -ver "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
--sver "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_starter.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv"
+-sver "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv"
 -path "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga" "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga"
--top input_to_state
+-top aes
 -isTop
 -a "iCE40UP"
 -t "iCE40UP5K"

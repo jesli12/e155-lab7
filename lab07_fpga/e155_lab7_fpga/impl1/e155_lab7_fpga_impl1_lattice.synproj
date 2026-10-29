@@ -41,11 +41,20 @@
 -lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
 
 # Source Files
--sver "../../src/aes_starter.sv"
 -sver "../source/impl1/subbytes.sv"
 -sver "../source/impl1/input_to_state.sv"
+-sver "../source/impl1/state_to_output.sv"
+-sver "../source/impl1/shiftrows.sv"
+-sver "../source/impl1/addroundkey.sv"
+-sver "../source/impl1/keyexpansion.sv"
+-sver "../source/impl1/aes_core.sv"
+-sver "../source/impl1/sbox.sv"
+-sver "../source/impl1/sbox_sync.sv"
+-sver "../source/impl1/aes_spi.sv"
+-sver "../source/impl1/mixcolumns.sv"
+-sver "../source/impl1/aes.sv"
 -path ".."
--top input_to_state
+-top aes
 # Output Configuration
 -udb "e155_lab7_fpga_impl1_rtl.udb"
 -output_hdl "e155_lab7_fpga_impl1.vm"

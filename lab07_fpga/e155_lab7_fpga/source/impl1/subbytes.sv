@@ -5,7 +5,7 @@
 //   
 /////////////////////////////////////////////
 
-module subbytes(input  logic         clk, reset, en,
+module subbytes(input  logic         clk,
                 input  logic [127:0] state, 
                 output logic [127:0] Sstate);
 	// replaces each byte (8-bit) in the state block (128 bits) with its Sbox() transformation

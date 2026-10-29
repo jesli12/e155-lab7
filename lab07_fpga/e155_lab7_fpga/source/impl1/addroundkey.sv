@@ -8,8 +8,8 @@
 //   Purely combinational
 /////////////////////////////////////////////
 
-module addroundkey(input  logic [127:0] state0,
+module addroundkey(input  logic [127:0] a,
 				  input logic [127:0] roundkey,
-                 output logic [127:0] state1);
-	assign state1 = state0^roundkey;
+                 output logic [127:0] y);
+	assign y = a^roundkey;
 endmodule
