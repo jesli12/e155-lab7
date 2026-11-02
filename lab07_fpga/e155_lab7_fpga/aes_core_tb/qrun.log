@@ -329,3 +329,5 @@
 # ** Note: $stop    : C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv(48)
 #    Time: 2250 ns  Iteration: 1  Instance: /testbench_aes_core
 # Break in Module testbench_aes_core at C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv line 48
+# End time: 15:13:38 on Nov 02,2026, Elapsed time: 14:30:51
+# Errors: 0, Warnings: 0
