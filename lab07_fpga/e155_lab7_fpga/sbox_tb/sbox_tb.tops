@@ -1,0 +1,3 @@
+testbench_aes_sbox,/,C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_sbox_tb.sv
+sbox,/,C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv
+aes,/,C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv

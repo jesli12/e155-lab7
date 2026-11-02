@@ -1,0 +1,2 @@
+2 9 sbox_sync 4 fast 89 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/sbox_tb/qrun.out/work 0 0 0 0 20 0
+1 18 testbench_aes_sbox 4 fast 89 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/sbox_tb/qrun.out/work 0 0 0 0 120 0

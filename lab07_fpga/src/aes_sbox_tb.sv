@@ -57,6 +57,7 @@ module testbench_aes_sbox();
     // Generate signal to demonstrate one clock cycle latency of the synchronous s-box substitution.
     // You must wait until the next rising edge for the output data (substituted byte) to be valid
     initial begin
+		#22;
       a = input_bytes_2d[0][31:24];
       #22;
       a = input_bytes_2d[0][23:16];

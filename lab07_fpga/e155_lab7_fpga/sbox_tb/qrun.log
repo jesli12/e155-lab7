@@ -1,0 +1,40 @@
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   0, Warnings:   1
+#     vopt: Errors:   0, Warnings:   3
+#   Totals: Errors:   0, Warnings:   4
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -L work -L pmi_work -L ovi_ice40up -lib qrun.out/work -wlf vsim.wlf -gui -do "view wave" -do "add wave /*" -do "run -all" -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log 
+# Start time: 23:21:39 on Nov 01,2026
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# add wave /*
+# run -all
+# ** Note: $stop    : C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_sbox_tb.sv line 68
+# End time: 23:30:42 on Nov 01,2026, Elapsed time: 0:09:03
+# Errors: 0, Warnings: 0
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   0, Warnings:   0
+#     vopt: Errors:   0, Warnings:   3
+#   Totals: Errors:   0, Warnings:   3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -L work -L pmi_work -L ovi_ice40up -lib qrun.out/work -wlf vsim.wlf -gui -do "view wave" -do "add wave /*" -do "run -all" -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log 
+# Start time: 23:30:59 on Nov 01,2026
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# add wave /*
+# run -all
+# ** Note: $stop    : C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_sbox_tb.sv(69)
+#    Time: 1100 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_sbox_tb.sv line 69
+# End time: 23:51:03 on Nov 01,2026, Elapsed time: 0:20:04
+# Errors: 0, Warnings: 0

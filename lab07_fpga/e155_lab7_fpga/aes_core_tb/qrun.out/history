@@ -1,0 +1,24 @@
+- Entry: 1
+  Time: Sun Nov 01 23:16:25 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -clean -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 2
+  Time: Sun Nov 01 23:19:30 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 3
+  Time: Sun Nov 01 23:51:33 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 4
+  Time: Mon Nov 02 00:03:05 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 5
+  Time: Mon Nov 02 00:26:31 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 6
+  Time: Mon Nov 02 00:33:36 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 7
+  Time: Mon Nov 02 00:34:46 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 8
+  Time: Mon Nov 02 00:38:33 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 

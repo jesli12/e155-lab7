@@ -1,0 +1,6 @@
+- Entry: 1
+  Time: Sun Nov 01 23:21:38 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -clean -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/sbox_tb/sbox_tb.f 
+- Entry: 2
+  Time: Sun Nov 01 23:30:58 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/sbox_tb/sbox_tb.f 

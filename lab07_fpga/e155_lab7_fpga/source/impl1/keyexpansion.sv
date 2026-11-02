@@ -30,14 +30,14 @@ module keyexpansion(input  logic clk,
 			case(round)
 				4'd1: rcon = 32'h01000000;
 				4'd2: rcon = 32'h02000000;
-				4'd2: rcon = 32'h04000000;
-				4'd2: rcon = 32'h08000000;
-				4'd2: rcon = 32'h10000000;
-				4'd2: rcon = 32'h20000000;
-				4'd2: rcon = 32'h40000000;
-				4'd2: rcon = 32'h80000000;
-				4'd2: rcon = 32'h1b000000;
-				4'd2: rcon = 32'h36000000;
+				4'd3: rcon = 32'h04000000;
+				4'd4: rcon = 32'h08000000;
+				4'd5: rcon = 32'h10000000;
+				4'd6: rcon = 32'h20000000;
+				4'd7: rcon = 32'h40000000;
+				4'd8: rcon = 32'h80000000;
+				4'd9: rcon = 32'h1b000000;
+				4'd10: rcon = 32'h36000000;
 				default: rcon = 32'h01000000;
 			endcase
 	end
@@ -49,12 +49,12 @@ module keyexpansion(input  logic clk,
 		// rot word shifts (rotates) the 4 bytes to the left and loops the last to the back [b1, b2, b3 , b0]
 		// with the resulting word, its 4 bytes are inputted into sbox
 	sbox_sync sbox_b4(.a(rkey[23:16]), .clk(clk), .y(subW0[31:24]));
-	sbox_sync sbox_b4(.a(rkey[15:8]), .clk(clk), .y(subW0[23:16]));
-	sbox_sync sbox_b4(.a(rkey[7:0]), .clk(clk), .y(subW0[15:8]));
-	sbox_sync sbox_b4(.a(rkey[31:24]), .clk(clk), .y(subW0[7:0]));
+	sbox_sync sbox_b3(.a(rkey[15:8]), .clk(clk), .y(subW0[23:16]));
+	sbox_sync sbox_b2(.a(rkey[7:0]), .clk(clk), .y(subW0[15:8]));
+	sbox_sync sbox_b1(.a(rkey[31:24]), .clk(clk), .y(subW0[7:0]));
 	
 		// 3. w[0]=rk_w[0]^subW0^Rcon
-	assign keyOut[127:96] = rkey[127:96]^subW0^Rcon;
+	assign keyOut[127:96] = rkey[127:96]^subW0^rcon;
 	
 	// calculating NEW key's w[1] w[2] w[3]  ///////////////////////////////////////////////////////////////
 	// w[i] = w[i-4]^w[i-1]  --> w[i] = rk_w[i]^w[i-1];

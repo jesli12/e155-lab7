@@ -29,15 +29,15 @@ module aes_core(input  logic         clk,
 	statetype state, nextstate;
 	
 	logic [3:0] round; // counts which round we're on
-	// logic [3:0] selector; // output of FSM controller, selects mux outputs, [FIRST, DELAY, ROUND, LAST]
 
 	logic [127:0] textIn, subbytesOut, shiftrowsOut, mixcolumnsOut, opmuxOut, addroundkeyOut, textOut;
-	logic [127:0] prevKey, newKey;
+	logic [127:0] prevKey, newKey, keySelect;
 	
 // Datapath ////////////////////////////////////////////////////////////////////////////////////
 	subbytes subbyte_op(.clk(clk), .state(textIn), .Sstate(subbytesOut));
 	shiftrows shiftrows_op(.a(subbytesOut), .y(shiftrowsOut));
 	mixcolumns mixcolumns_op(.a(shiftrowsOut),.y(mixcolumnsOut));
+	
 	// Mux 1 (Op Mux): operation mux to be inputted into addroundkey
 	// controls opmuxOut
 	always_comb
@@ -49,9 +49,19 @@ module aes_core(input  logic         clk,
 			default: opmuxOut = mixcolumnsOut;
 		endcase
 	// End Mux 1
+	
+	// Mux 2 (keySelect Mux): key tobe inputted into addroundkey (should be OG for FIRST, keyexpanded for rest)
+	always_comb
+		case (state)
+			FIRST: keySelect = key;
+			default: keySelect = newKey;
+		endcase
+	// End Mux 2
+	
 	keyexpansion keyexpansion_op(.clk(clk), .round(round), .rkey(prevKey), .keyOut(newKey));
-	addroundkey addroundkey_op(.a(opmuxOut), .roundkey(newKey), .y(addroundkeyOut));
-	// Mux 2: delay/not delay mux to be inputted into register next
+	addroundkey addroundkey_op(.a(opmuxOut), .roundkey(keySelect), .y(addroundkeyOut));
+	
+	// Mux 3: delay/not delay mux to be inputted into register next
 	// controls textOut
 	always_comb
 		case (state)
@@ -71,13 +81,12 @@ module aes_core(input  logic         clk,
 			state <= FIRST;
 		end 
 		else if (state == DELAY) begin
-			textOut <= textIn;
 			state <= nextstate;
 		end
 		else begin
 			round <= round + 4'd1;
 			textIn <= textOut;
-			prevKey <= newKey;
+			prevKey <= keySelect;
 			state <= nextstate;
 		end
 	end
@@ -86,8 +95,8 @@ module aes_core(input  logic         clk,
 	always_comb
 		case (state)
 			FIRST: nextstate = (round > 4'd0)? ROUNDS : DELAY;
-			DELAY: nextstate = ROUNDS; // one clock tick for key expansion's subword (SBOX) to process
-			ROUNDS: nextstate = (round > 4'd10)? LAST : ROUNDS;
+			DELAY: nextstate = (round >= 4'd10)? LAST : ROUNDS; // delay for SBOX sync to process
+			ROUNDS: nextstate = DELAY;
 			LAST: nextstate = LAST;
 			default: nextstate = FIRST;
 		endcase

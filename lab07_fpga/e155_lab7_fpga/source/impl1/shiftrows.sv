@@ -27,10 +27,10 @@ module shiftrows(input  logic [127:0] a,
 	assign state1[0] = state0[0];
 	
 	// row 1 shifts left 1
-	assign state1[1][0] = state0[1][3];
-	assign state1[1][1] = state0[1][0];
-	assign state1[1][2] = state0[1][1];
-	assign state1[1][3] = state0[1][2];
+	assign state1[1][0] = state0[1][1];
+	assign state1[1][1] = state0[1][2];
+	assign state1[1][2] = state0[1][3];
+	assign state1[1][3] = state0[1][0];
 	
 	// row 2 shifts left 2
 	assign state1[2][0] = state0[2][2];
@@ -39,10 +39,10 @@ module shiftrows(input  logic [127:0] a,
 	assign state1[2][3] = state0[2][1];
 	
 	// row 3 shifts left 3
-	assign state1[3][0] = state0[3][1];
-	assign state1[3][1] = state0[3][2];
-	assign state1[3][2] = state0[3][3];
-	assign state1[3][3] = state0[3][0];
+	assign state1[3][0] = state0[3][3];
+	assign state1[3][1] = state0[3][0];
+	assign state1[3][2] = state0[3][1];
+	assign state1[3][3] = state0[3][2];
 	
 	state_to_output s2o(.a(state1), .y(y));
 

@@ -41,6 +41,7 @@
 -lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
 
 # Source Files
+-sver "../../src/aes_core_tb.sv"
 -sver "../source/impl1/subbytes.sv"
 -sver "../source/impl1/input_to_state.sv"
 -sver "../source/impl1/state_to_output.sv"
