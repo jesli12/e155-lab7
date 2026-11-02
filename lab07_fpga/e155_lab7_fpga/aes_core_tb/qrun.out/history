@@ -22,3 +22,6 @@
 - Entry: 8
   Time: Mon Nov 02 00:38:33 2026
   Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
+- Entry: 9
+  Time: Mon Nov 02 00:42:47 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f 
