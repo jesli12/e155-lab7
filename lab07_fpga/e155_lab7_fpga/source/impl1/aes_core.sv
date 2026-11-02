@@ -80,7 +80,7 @@ module aes_core(input  logic         clk,
 			prevKey <= key;
 			state <= FIRST;
 		end 
-		else if (state == DELAY) begin
+		else if ((state == DELAY)||(state == LAST)) begin
 			state <= nextstate;
 		end
 		else begin

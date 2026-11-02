@@ -1,0 +1,97 @@
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   0, Warnings:   1
+#     vopt: Errors:   0, Warnings:   4
+#   Totals: Errors:   0, Warnings:   5
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -L work -L pmi_work -L ovi_ice40up -lib qrun.out/work -wlf vsim.wlf -gui -do "view wave" -do "add wave /*" -do "run -all" -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log 
+# Start time: 13:13:31 on Nov 02,2026
+# Loading sv_std.std
+# Loading work.testbench_aes_spi(fast)
+# Loading work.aes(fast)
+# Loading work.aes_spi(fast)
+# Loading work.aes_core(fast)
+# Loading work.subbytes(fast)
+# Loading work.sbox_sync(fast)
+# Loading work.shiftrows(fast)
+# Loading work.input_to_state(fast)
+# Loading work.state_to_output(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+# Loading work.keyexpansion(fast)
+# Loading work.addroundkey(fast)
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# add wave /*
+# run -all
+# Error: cyphertext = dec510c9aea45472ca0b38e9fdb63102, expected 3925841d02dc09fbdc118597196a0b32
+# ** Note: $stop    : C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv(75)
+#    Time: 41550 ns  Iteration: 1  Instance: /testbench_aes_spi
+# Break in Module testbench_aes_spi at C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv line 75
+# End time: 14:09:54 on Nov 02,2026, Elapsed time: 0:56:23
+# Errors: 0, Warnings: 0
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#   Totals: Errors:   0, Warnings:   0
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -L work -L pmi_work -L ovi_ice40up -lib qrun.out/work -wlf vsim.wlf -gui -do "view wave" -do "add wave /*" -do "run -all" -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log 
+# Start time: 14:10:19 on Nov 02,2026
+# Loading sv_std.std
+# Loading work.testbench_aes_spi(fast)
+# Loading work.aes(fast)
+# Loading work.aes_spi(fast)
+# Loading work.aes_core(fast)
+# Loading work.subbytes(fast)
+# Loading work.sbox_sync(fast)
+# Loading work.shiftrows(fast)
+# Loading work.input_to_state(fast)
+# Loading work.state_to_output(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+# Loading work.keyexpansion(fast)
+# Loading work.addroundkey(fast)
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# add wave /*
+# run -all
+# Error: cyphertext = dec510c9aea45472ca0b38e9fdb63102, expected 3925841d02dc09fbdc118597196a0b32
+# ** Note: $stop    : C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv(75)
+#    Time: 41550 ns  Iteration: 1  Instance: /testbench_aes_spi
+# Break in Module testbench_aes_spi at C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv line 75
+# End time: 15:04:42 on Nov 02,2026, Elapsed time: 0:54:23
+# Errors: 0, Warnings: 0
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   0, Warnings:   0
+#     vopt: Errors:   0, Warnings:   3
+#   Totals: Errors:   0, Warnings:   3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -L work -L pmi_work -L ovi_ice40up -lib qrun.out/work -wlf vsim.wlf -gui -do "view wave" -do "add wave /*" -do "run -all" -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log 
+# Start time: 15:05:05 on Nov 02,2026
+# Loading sv_std.std
+# Loading work.testbench_aes_spi(fast)
+# Loading work.aes(fast)
+# Loading work.aes_spi(fast)
+# Loading work.aes_core(fast)
+# Loading work.subbytes(fast)
+# Loading work.sbox_sync(fast)
+# Loading work.shiftrows(fast)
+# Loading work.input_to_state(fast)
+# Loading work.state_to_output(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+# Loading work.keyexpansion(fast)
+# Loading work.addroundkey(fast)
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# add wave /*
+# run -all
+# Testbench ran successfully
+# ** Note: $stop    : C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv(75)
+#    Time: 41550 ns  Iteration: 1  Instance: /testbench_aes_spi
+# Break in Module testbench_aes_spi at C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv line 75
+# End time: 15:05:19 on Nov 02,2026, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0

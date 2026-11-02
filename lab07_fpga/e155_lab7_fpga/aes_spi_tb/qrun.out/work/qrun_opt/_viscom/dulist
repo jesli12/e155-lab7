@@ -1,0 +1,14 @@
+2 7 aes_spi 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 63 0
+2 9 sbox_sync 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 20 0
+2 8 subbytes 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 131072 0 70 0
+2 14 input_to_state 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 84 0
+2 15 state_to_output 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 84 0
+2 9 shiftrows 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 77 0
+2 10 galoismult 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 15 0
+2 9 mixcolumn 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 106 0
+2 10 mixcolumns 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 16 0
+2 12 keyexpansion 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 84 0
+2 11 addroundkey 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 10 0
+1 8 aes_core 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 178 0
+2 3 aes 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 30 0
+2 17 testbench_aes_spi 4 fast 92 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_spi_tb/qrun.out/work 0 0 0 0 141 0
