@@ -10,12 +10,12 @@
 "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv" 
 "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv" 
 "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv" 
+"C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv" 
 "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv" 
-"C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv" 
-"C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv" 
 "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv" 
 "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv" 
-"C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv" 
+"C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv" 
+"C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv" 
 -sv
 -optionset VOPTDEBUG
 +noacc+pmi_work.*

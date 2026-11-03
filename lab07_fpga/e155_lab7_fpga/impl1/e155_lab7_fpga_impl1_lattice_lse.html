@@ -41,6 +41,18 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+synthesis:  version Radiant Software (64-bit) 2026.1.0.37.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Nov  2 20:51:15 2026
+
+
+Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/impl1/e155_lab7_fpga_impl1_lattice.synproj -logfile e155_lab7_fpga_impl1_lattice.srp -gui -msgset C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/promote.xml 
+
 Lattice Synthesis Engine launched.
 
 Synthesis options:
@@ -83,7 +95,7 @@ INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
 ----------------------------------------------------------------
 Optimization Goal     | Area
 ----------------------------------------------------------------
-Top-level Module Name | input_to_state
+Top-level Module Name | aes
 ----------------------------------------------------------------
 Target Frequency      | 200.000 MHz
 ----------------------------------------------------------------
@@ -150,9 +162,19 @@ Output HDL filename: e155_lab7_fpga_impl1.vm
 -path C:/lscc/radiant/2026.1/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
 Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
-Verilog design file: ../../src/aes_starter.sv
+Verilog design file: ../../src/aes_spi_tb.sv
 Verilog design file: ../source/impl1/subbytes.sv
 Verilog design file: ../source/impl1/input_to_state.sv
+Verilog design file: ../source/impl1/state_to_output.sv
+Verilog design file: ../source/impl1/shiftrows.sv
+Verilog design file: ../source/impl1/addroundkey.sv
+Verilog design file: ../source/impl1/keyexpansion.sv
+Verilog design file: ../source/impl1/aes.sv
+Verilog design file: ../source/impl1/aes_core.sv
+Verilog design file: ../source/impl1/aes_spi.sv
+Verilog design file: ../source/impl1/mixcolumns.sv
+Verilog design file: ../source/impl1/sbox.sv
+Verilog design file: ../source/impl1/sbox_sync.sv
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
 
@@ -163,9 +185,132 @@ Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\v
 Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
 Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\simulation\verilog\iCE40UP\iCE40UP_sp.v. VERI-1482
 Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
-Analyzing Verilog file ../../src/aes_starter.sv. VERI-1482
+Analyzing Verilog file ../../src/aes_spi_tb.sv. VERI-1482
 Analyzing Verilog file ../source/impl1/subbytes.sv. VERI-1482
-ERROR <35901116> - synthesis: ../source/impl1/subbytes.sv(17): sbox15 is already declared. VERI-1116
+Analyzing Verilog file ../source/impl1/input_to_state.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/state_to_output.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/shiftrows.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/addroundkey.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/keyexpansion.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/aes.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/aes_core.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/aes_spi.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/mixcolumns.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/sbox.sv. VERI-1482
+Analyzing Verilog file ../source/impl1/sbox_sync.sv. VERI-1482
+Top module name (Verilog): aes
+INFO <35901018> - synthesis: ../source/impl1/aes.sv(6): compiling module aes. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/aes_spi.sv(8): compiling module aes_spi. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/aes_core.sv(20): compiling module aes_core. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/subbytes.sv(8): compiling module subbytes. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/sbox_sync.sv(7): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: ../source/impl1/sbox_sync.sv(14): net sbox does not have a driver. VDB-1002
+INFO <35901018> - synthesis: ../source/impl1/shiftrows.sv(20): compiling module shiftrows. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/input_to_state.sv(27): compiling module input_to_state. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/state_to_output.sv(14): compiling module state_to_output. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/mixcolumns.sv(8): compiling module mixcolumns. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/mixcolumns.sv(24): compiling module mixcolumn. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/mixcolumns.sv(51): compiling module galoismult. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/keyexpansion.sv(11): compiling module keyexpansion. VERI-1018
+INFO <35901018> - synthesis: ../source/impl1/addroundkey.sv(11): compiling module addroundkey. VERI-1018
+
+<A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
+
+[Parameter Setting Section Start]
+
+[Parameter Setting Section End]
+WARNING <1009991> - synthesis: ../source/impl1/sbox_sync.sv(14): RAM 'sbox_original_ramnet' has no write-port
+
+WARNING <1009991> - synthesis: ../source/impl1/sbox_sync.sv(14): initial value for RAM 'sbox_original_ramnet' must be preserved to avoid dangling nets after RAM blasting
+
+INFO <35001774> - synthesis: Extracted state machine for register '\core/state' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: clk
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: sck
+INFO <35002061> - synthesis: Port accepted for I/O register mapping: sdi
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: sdo
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: load
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: done
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+
+<A name="lse_area"></A><B><U><big>Area Report</big></U></B>
+
+################### Begin Area Report (aes)######################
+Number of register bits => 648 of 5280 (12 % )
+EBR_B => 20
+FD1P3XZ => 648
+IB => 4
+INV => 1
+IOL_B => 1
+LUT4 => 1215
+OB => 2
+################### End Area Report ##################
+Number of odd-length carry chains : 0
+Number of even-length carry chains : 0
+
+
+<A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 0
+  Net : sck_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : core/cyphertext_127__N_1[0], loads : 291
+  Net : core/n3217, loads : 259
+  Net : load_c, loads : 171
+  Net : core/done_c, loads : 134
+  Net : core/cyphertext_127__N_1[1], loads : 132
+  Net : spi/wasdone, loads : 127
+  Net : core/n3485, loads : 96
+  Net : core/round[0], loads : 12
+  Net : core/round[1], loads : 12
+  Net : spi/cyphertextcaptured_126__N_129[27], loads : 12
+################### End Clock Report ##################
+
+
+<A name="lse_constraint"></A><B><U><big>Constraint Report</big></U></B>
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 0
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+Peak Memory Usage: 102 MB
+
+--------------------------------------------------------------
+Total CPU Time: 1 secs 
+Total REAL Time: 4 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: 3b2bc720775909cf2d13cced805c7a7f36a0790b
 
 
 
@@ -220,6 +365,16 @@ ERROR <35901116> - synthesis: ../source/impl1/subbytes.sv(17): sbox15 is already
 <BR>
 <BR>
 </PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#Syn>Top</A></LI>
+<LI><A href=#lse_parameter>Parameter Setting</A></LI>
+<LI><A href=#lse_area>Area Report</A></LI>
+<LI><A href=#lse_clock>Clock Report</A></LI>
+<LI><A href=#lse_constraint>Constraint Report</A></LI>
+</UL>
+</DIV>
 
 <button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
 <script type="text/javascript">

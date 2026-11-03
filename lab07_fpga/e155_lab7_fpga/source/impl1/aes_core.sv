@@ -94,7 +94,7 @@ module aes_core(input  logic         clk,
 	// next state logic!
 	always_comb
 		case (state)
-			FIRST: nextstate = (round > 4'd0)? ROUNDS : DELAY;
+			FIRST: nextstate = DELAY;
 			DELAY: nextstate = (round >= 4'd10)? LAST : ROUNDS; // delay for SBOX sync to process
 			ROUNDS: nextstate = DELAY;
 			LAST: nextstate = LAST;
