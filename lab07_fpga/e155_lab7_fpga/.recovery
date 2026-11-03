@@ -57,6 +57,9 @@
         <Source name="source/impl1/sbox.txt" type="Unknown Type" type_short="Unknown">
             <Options/>
         </Source>
+        <Source name="source/impl1_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
         <Source name="../src/aes_spi_tb.sv.bak" type="Unknown Type" type_short="Unknown" excluded="TRUE">
             <Options/>
         </Source>

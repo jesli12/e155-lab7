@@ -223,3 +223,5 @@
 # ** Note: $stop    : C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv(75)
 #    Time: 41550 ns  Iteration: 1  Instance: /testbench_aes_spi
 # Break in Module testbench_aes_spi at C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_spi_tb.sv line 75
+# End time: 22:57:15 on Nov 02,2026, Elapsed time: 2:05:22
+# Errors: 0, Warnings: 0
