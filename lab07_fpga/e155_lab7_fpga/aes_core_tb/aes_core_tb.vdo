@@ -1,1 +1,1 @@
-qrun -f "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f"
+qrun -clean -f "C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb/aes_core_tb.f"

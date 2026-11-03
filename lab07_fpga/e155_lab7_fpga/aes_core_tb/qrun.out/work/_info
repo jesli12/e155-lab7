@@ -2,11 +2,6 @@ m255
 K4
 z2
 Z0 !s99 nomlopt
-R0
-R0
-R0
-R0
-R0
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
 !s112 1.1
@@ -16,15 +11,15 @@ R0
 cModel Technology
 Z1 dC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/aes_core_tb
 vaddroundkey
-Z2 2C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv
+Z2 2C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv
 Z3 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
-Z4 !s110 1793603785
+Z4 !s110 1793746532
 !i10b 1
 !s100 cXkZ7gWFf<bTERoA_L=IC2
 Ia8L5J1Io0M=6HbzIHaUX33
 S1
 R1
-Z5 w1793596666
+Z5 w1793678071
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv
 !i122 0
@@ -34,9 +29,9 @@ Z7 OL;L;2025.2;82
 r1
 !s85 0
 31
-Z8 !s108 1793603785.000000
-Z9 !s107 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv|
-Z10 !s90 -reportprogress|300|-L|work|-sv|-L|pmi_work|-L|ovi_ice40up|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv|-work|qrun.out/work|-statslog|qrun.out/stats_log|-csession=incr|
+Z8 !s108 1793746532.000000
+Z9 !s107 C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv|
+Z10 !s90 -reportprogress|300|-L|work|-sv|-L|pmi_work|-L|ovi_ice40up|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/addroundkey.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_spi.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox.sv|C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv|-work|qrun.out/work|-statslog|qrun.out/stats_log|-csession=incr|
 !i113 0
 Z11 o-L work -sv -L pmi_work -L ovi_ice40up -work qrun.out/work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z12 tCvgOpt 0 defaultOptions 1085333592
@@ -68,23 +63,23 @@ R12
 vaes_core
 R2
 R3
-Z13 !s110 1793608486
+R4
 !i10b 1
-!s100 C5YZ1BjeXR81Wb;Fa]Ujm1
-IZbQ8EI5nHGE=kH4>ChGII0
+!s100 JnZ<c7YUi3D`RZ`>fnE@@1
+IQnM@M1HFe9elR3Z<lW4iC3
 S1
 R1
-w1793608445
+w1793681471
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/aes_core.sv
-!i122 5
+!i122 0
 L0 20 88
 R6
 R7
 r1
 !s85 0
 31
-!s108 1793608486.000000
+R8
 R9
 R10
 !i113 0
@@ -125,8 +120,8 @@ I0E20igE3GnZNHQ9LVWgbB2
 S1
 R1
 R5
-Z14 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv
-Z15 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv
+Z13 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv
+Z14 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/mixcolumns.sv
 !i122 0
 L0 51 8
 R6
@@ -149,7 +144,7 @@ R4
 If7T7T9nTXcfdg^m7jQOha2
 S1
 R1
-w1793055632
+Z15 w1793223096
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/input_to_state.sv
 !i122 0
@@ -174,7 +169,7 @@ R4
 I9XS90<9Pf:GJe63[>lOUj1
 S1
 R1
-w1793598729
+R5
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/keyexpansion.sv
 !i122 0
@@ -200,8 +195,8 @@ IBdWD3H5nRFDi9aB17ldmn2
 S1
 R1
 R5
+R13
 R14
-R15
 !i122 0
 L0 24 19
 R6
@@ -225,8 +220,8 @@ I0GW[dDNhLD8WRn1R:FS=S3
 S1
 R1
 R5
+R13
 R14
-R15
 !i122 0
 L0 8 8
 R6
@@ -243,8 +238,8 @@ R12
 Tqrun_opt
 !i145 1
 !i144 0
-R13
-Vj6Heg>lIFG?j?Y^ZaoUaW3
+!s110 1793746533
+VICan5CnnI;X;fF?e@@Hc`2
 04 18 4 work testbench_aes_core fast 0
 R0
 !s12f OEM25U47 
@@ -283,23 +278,23 @@ R12
 vsbox_sync
 R2
 R3
-!s110 1793603971
+R4
 !i10b 1
 !s100 >Zb_`7?b0dB<L@W<JlFZj1
 IgzQ^1]::FM8Ek4h?Mz9EZ1
 S1
 R1
-w1793603941
+R5
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/sbox_sync.sv
-!i122 1
+!i122 0
 L0 7 16
 R6
 R7
 r1
 !s85 0
 31
-!s108 1793603970.000000
+R8
 R9
 R10
 !i113 0
@@ -314,7 +309,7 @@ R4
 IXGn_5RN@YA8_N@mISbORD2
 S1
 R1
-w1793603056
+R5
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/shiftrows.sv
 !i122 0
@@ -339,7 +334,7 @@ R4
 IVVPKQ2YO^a0C@W6NA7cI<1
 S1
 R1
-w1793068636
+R15
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/state_to_output.sv
 !i122 0
@@ -364,7 +359,7 @@ R4
 I1L^e<VmFM2fG]Q[KNmbjD1
 S1
 R1
-w1793600457
+R5
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/e155_lab7_fpga/source/impl1/subbytes.sv
 !i122 0
@@ -389,7 +384,7 @@ R4
 InZ6mZ@<?M6?725EWhd;YN3
 S1
 R1
-w1792994287
+R15
 8C:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab7/lab07_fpga/src/aes_core_tb.sv
 !i122 0
